@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* background:linear-gradient(90deg,red,rgba(4, 215, 75, 0.741),green); */
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #0a4d87 0%, #1a969c 100%);
+    color: aliceblue;
+    padding: 1%;
+    box-shadow: 0px 10px 25px rgb(34, 34, 173);
+    border-bottom: 1px solid white;
+
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-sections {
+    display: flex;
+    gap: 20px;
+
+}
+
+.navbar-sections p {
+    cursor: pointer;
+}
+
+.navbar-logo {
+    margin-left: 3%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.logo {
+    width: 4vw;
+    border-radius: 10%;
+}
+
+.body {
+    margin: 3%;
+    display: flex;
+}
+
+.body-img-container {
+    display: flex;
+    justify-content: right;
+    /* align-content: center; */
+}
+
+.body-img-container img {
+    width: 40vw;
+    height: 60vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    animation: zoom 0.8s ease-in-out forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.2);
+    }
+
+    100% {
+        transform: matrix3d(1.8);
+    }
+}
+
+.body-img-container img:hover {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.body-qoute {
+    width: 40%;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+}
+
+.qoute-head {
+    color: #032d2f;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.qoute-sub {
+    position: absolute;
+    top: 100px;
+    color: #1f595d;
+}
+
+.body-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+.body-btn button{
+    background-color: #0ca751;
+    padding: 3%;
+    border: none;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.body-btn button:hover{
+    transform: scale(1.1);
+}
